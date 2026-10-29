@@ -1,1 +1,345 @@
-测试下网页代码
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马休（北京）技术有限责任公司 | 企业汇率风险智囊</title>
+    <meta name="description" content="马休（北京）技术有限责任公司（简称马休），位于北京，独立企业侧汇率风控智囊，不触碰企业资金。依托宏观研判、企业画像、数据建模三大核心能力，精准量化汇率风险，守护外贸订单利润。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F2B5B',
+                        secondary: '#224b94',
+                        light: '#f4f7fc'
+                    },
+                    fontFamily: {
+                        sans: ['system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+            }
+            .section-padding {
+                @apply py-16 md:py-24;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700 font-sans">
+
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-primary/95 text-white z-50 shadow">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-lg md:text-xl font-bold">马休（北京）技术有限责任公司</div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#hero" class="hover:text-blue-200 transition">首页</a>
+                <a href="#service" class="hover:text-blue-200 transition">服务方案</a>
+                <a href="#team" class="hover:text-blue-200 transition">团队</a>
+                <a href="#about" class="hover:text-blue-200 transition">关于我们</a>
+                <a href="#contact" class="hover:text-blue-200 transition">联系我们</a>
+            </nav>
+            <button id="mobileMenuBtn" class="md:hidden text-xl" aria-label="菜单">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <nav id="mobileMenu" class="hidden md:hidden bg-primary/95 border-t border-white/10">
+            <div class="container mx-auto px-4 py-4 flex flex-col gap-4">
+                <a href="#hero" class="hover:text-blue-200 transition">首页</a>
+                <a href="#service" class="hover:text-blue-200 transition">服务方案</a>
+                <a href="#team" class="hover:text-blue-200 transition">团队</a>
+                <a href="#about" class="hover:text-blue-200 transition">关于我们</a>
+                <a href="#contact" class="hover:text-blue-200 transition">联系我们</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero 区域 -->
+    <section id="hero" class="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br from-primary via-secondary to-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl">
+                <p class="text-blue-200 text-sm md:text-base tracking-wider uppercase mb-4">Independent FX Risk Advisor</p>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-shadow">
+                    企业汇率风险智囊
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 mb-4 leading-relaxed">
+                    独立企业侧汇率风控智囊，不触碰企业资金。
+                </p>
+                <p class="text-base md:text-lg text-blue-200 mb-8 leading-relaxed border-l-4 border-blue-300 pl-4">
+                    用更少的成本，获得更好的汇率安全保障。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#service" class="inline-block bg-white text-primary font-semibold px-8 py-3 rounded-lg hover:bg-blue-50 transition shadow-lg">
+                        了解核心能力
+                    </a>
+                    <a href="#contact" class="inline-block border-2 border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-white hover:text-primary transition">
+                        联系专家
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我们如何帮企业管控汇率风险 -->
+    <section id="service" class="section-padding bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-secondary font-semibold tracking-wide mb-2">HOW WE HELP</p>
+                <h2 class="text-2xl md:text-4xl font-bold text-primary">我们如何帮企业管控汇率风险</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-4 rounded"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 md:gap-10 max-w-6xl mx-auto">
+                <div class="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-primary"></div>
+                    <div class="absolute top-6 right-6 text-6xl font-bold text-secondary/5">01</div>
+                    <div class="relative">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa fa-globe text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">宏观经济研判</h3>
+                        <p class="text-gray-600 leading-relaxed text-[15px]">
+                            跟踪全球货币政策、国际收支、经济周期等核心指标，
+                            研判汇率中长期波动趋势。
+                        </p>
+                    </div>
+                </div>
+                <div class="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-primary"></div>
+                    <div class="absolute top-6 right-6 text-6xl font-bold text-secondary/5">02</div>
+                    <div class="relative">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa fa-building text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">企业业务画像分析</h3>
+                        <p class="text-gray-600 leading-relaxed text-[15px]">
+                            深度调研企业订单周期、币种结构、收付汇节奏，
+                            精准识别企业独有的风险敞口，拒绝一刀切方案。
+                        </p>
+                    </div>
+                </div>
+                <div class="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary to-primary"></div>
+                    <div class="absolute top-6 right-6 text-6xl font-bold text-secondary/5">03</div>
+                    <div class="relative">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa fa-calculator text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary mb-4">专属量化数据模型</h3>
+                        <p class="text-gray-600 leading-relaxed text-[15px]">
+                            融合宏观数据与企业经营数据搭建模型，
+                            提升汇率波动预判精度，测算最优避险比例。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto mt-14 md:mt-20 text-center bg-gradient-to-r from-primary to-secondary text-white rounded-2xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
+                </div>
+                <div class="relative">
+                    <p class="text-sm text-blue-200 tracking-wider uppercase mb-4">Our Goal</p>
+                    <p class="text-xl md:text-2xl font-bold leading-relaxed">
+                        最终目标：帮助企业用更少的成本，获得更好的汇率安全保障。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队 -->
+    <section id="team" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 md:mb-16">
+                <p class="text-secondary font-semibold tracking-wide mb-2">OUR TEAM</p>
+                <h2 class="text-2xl md:text-4xl font-bold text-primary">团队</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mt-4 rounded"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto leading-relaxed">
+                    核心成员来自国内外顶尖高校金融、经济等专业，
+                    并与多所高校宏观金融研究团队保持长期合作。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-light rounded-xl p-6 text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">10+</div>
+                    <div class="text-gray-600 text-sm">宏观研究深耕年限</div>
+                </div>
+                <div class="bg-light rounded-xl p-6 text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">80%+</div>
+                    <div class="text-gray-600 text-sm">硕博人员占比</div>
+                </div>
+                <div class="bg-light rounded-xl p-6 text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">2</div>
+                    <div class="text-gray-600 text-sm">高校合作团队</div>
+                </div>
+                <div class="bg-light rounded-xl p-6 text-center">
+                    <div class="text-3xl md:text-4xl font-bold text-primary mb-2">100%</div>
+                    <div class="text-gray-600 text-sm">数据驱动决策</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-secondary font-semibold tracking-wide mb-2">ABOUT US</p>
+                    <h2 class="text-2xl md:text-4xl font-bold text-primary mb-6">为什么选择马休</h2>
+                    <div class="w-20 h-1 bg-secondary rounded mb-8"></div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        马休（北京）技术有限责任公司是一家专注于企业汇率风险管理的独立智囊机构。
+                        我们不触碰企业资金、不参与交易分成，只提供中立、专业的智力服务。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-8">
+                        我们相信 —— 汇率风险必须用数据说话。
+                        拒绝经验主义，拒绝黑箱操作，让每一个风险结论都有模型支撑、每一条建议都可追溯验证。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-primary">立场独立 · 不碰资金</h4>
+                                <p class="text-gray-600 text-sm">仅提供建议与方案，不接触企业任何资金账户</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-primary">数据驱动 · 量化透明</h4>
+                                <p class="text-gray-600 text-sm">每一个风险结论都有模型支撑，可追溯、可验证</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-secondary text-xl mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-primary">量身画像 · 拒绝套话</h4>
+                                <p class="text-gray-600 text-sm">深入理解企业特征，不做一刀切的通用建议</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <h3 class="text-lg font-bold text-primary mb-6">我们的工作方式</h3>
+                    <ol class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-semibold text-primary">企业业务画像分析</h4>
+                                <p class="text-gray-600 text-sm mt-1">调研订单周期、币种结构、收付汇节奏，精准识别独有风险敞口</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">2</div>
+                            <div>
+                                <h4 class="font-semibold text-primary">专属量化数据模型</h4>
+                                <p class="text-gray-600 text-sm mt-1">融合宏观与经营数据建模，预判波动、测算最优避险比例</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">3</div>
+                            <div>
+                                <h4 class="font-semibold text-primary">宏观经济研判</h4>
+                                <p class="text-gray-600 text-sm mt-1">跟踪货币政策、国际收支、经济周期，研判中长期趋势</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-bold text-sm">4</div>
+                            <div>
+                                <h4 class="font-semibold text-primary">建议输出</h4>
+                                <p class="text-gray-600 text-sm mt-1">提交量化报告与操作建议，协助企业理解与决策</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="section-padding bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <p class="text-blue-200 font-semibold tracking-wide mb-2">CONTACT US</p>
+                <h2 class="text-2xl md:text-4xl font-bold">联系我们</h2>
+                <div class="w-20 h-1 bg-white/50 mx-auto mt-4 rounded"></div>
+                <p class="text-blue-100 mt-6 max-w-xl mx-auto leading-relaxed">
+                    如果您的企业有汇率风险管理需求，欢迎通过以下方式联系我们，
+                    马休专家团队将第一时间响应。
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur rounded-xl p-8 text-center border border-white/20">
+                    <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-phone text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">电话咨询</h3>
+                    <p class="text-blue-100 text-sm">工作日 9:00 - 18:00</p>
+                    <p class="text-lg font-bold mt-2">191-6425-6285</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-8 text-center border border-white/20">
+                    <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-envelope text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">邮件联系</h3>
+                    <p class="text-blue-100 text-sm">商务合作 / 专家咨询</p>
+                    <p class="text-lg font-bold mt-2">maxiutech@163.com</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-xl p-8 text-center border border-white/20">
+                    <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-map-marker text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2">公司地址</h3>
+                    <p class="text-blue-100 text-sm">北京市</p>
+                    <p class="text-lg font-bold mt-2">北京市丰台区马家堡街道63号院</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <span class="text-white font-bold">马休（北京）技术有限责任公司</span>
+            </div>
+            <p class="text-sm mb-2">独立企业侧汇率风控智囊 · 不触碰企业资金 · 用数据说话</p>
+            <p class="text-xs text-gray-500">&copy; 2026 马休（北京）技术有限责任公司 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
